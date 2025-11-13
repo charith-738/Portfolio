@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  background: #0077b6;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+nav .button {
+  background: #023e8a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav .button:hover {
+  background: #0096c7;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #0056b3;
+}
+
+.section {
+  max-width: 800px;
+  background: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in;
+}
+
+.section h2 {
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #0096c7;
+}
+
+ul, ol {
+  margin-left: 1.5rem;
+}
+
+/* --- Projects Section --- */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project {
+  flex: 1 1 45%;
+  background: #e7f5ff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+  color: #0077b6;
+  margin-bottom: 0.8rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-weight: bold;
+  color: #0077b6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #0096c7;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+form label, form b, form p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Buttons */
+.submit {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #0096c7;
+}
+
+.fixedButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.fixedButton:hover {
+  background-color: #0096c7;
+}
+
+/* Contact Section */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.contact-btn {
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0096c7;
+}
+
+/* ✅ Fix: Gender and Interests side by side */
+.gender, .interests {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.gender-options,
+.interest-options {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.gender-options label,
+.interest-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #0077b6;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section {
+    padding: 1.2rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .gender-options,
+  .interest-options {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

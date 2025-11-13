@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTFOLIO</title>
+    <link rel="icon" type="image/png" href="charith.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to my Portfolio</h1>
+        <nav>
+            <a href="#about"><button class="button">About</button></a>
+            <a href="#skills"><button class="button">Skills</button></a>
+            <a href="#projects"><button class="button">Projects</button></a>
+            <a href="#contact"><button class="button">Contact</button></a>
+        </nav>
+        <img src="charith.jpg" alt="Charith Image" class="profile-img">
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <h1>Hi — I'm <span class="highlight">Gaddam Charith Reddy</span></h1>
+            <h2 class="tagline">Java Developer | Web Developer | Problem Solver</h2>
+            <p>"I’m an enthusiastic software developer who enjoys creating interactive web apps and solving real-world problems with Java and modern web technologies.”</p><br>
+            <p>I am passionate web developer with a focus on front-end technologies."</p>
+            <p>I have completed my graduation with B. Tech in <i>Vidya Jyothi Institute of Technology</i> Hyderabad.</p>
+            <p>You can <a href="#skills" class="highlight">Click here</a> to checkout what I have learnt in HTML, CSS & JS.</p>
+            <br>
+            <a href="Charith_Reddy_Resume.pdf" download class="resume-btn">Download Resume</a>
+            
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Core Java</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+            </ul>
+            <h2>Tools I Use</h2>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Eclipse / IntelliJ IDEA</li>
+                <li>MySQL Workbench</li>
+                <li>Git & GitHub</li>
+                <li>Postman</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+        
+                <div class="project">
+                <h3>Healthcare Chatbot using AI</h3>
+                    <ul>
+                        <li>Developed a real-time chat application using Java for the GUI.</li>
+                        <li>Designed a responsive UI with HTML, CSS, and JavaScript.</li>
+                        <li>Implemented authentication and data persistence using JDBC and MySQL.</li>
+                    </ul>
+                    <a href="https://github.com/charith-738/HealthCare-Assistance-using-AI" target="_blank" class="project-link">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="22" style="vertical-align: middle; margin-right: 5px;">🔗 View on GitHub
+                    </a>
+                </div>
+
+                <div class="project">
+                <h3>E-Commerce Application</h3>
+                <ul>
+                    <li>Built an e-commerce platform using DBMS, SQL, and JavaScript.</li>
+                    <li>Added product listings, cart management, and login features.</li>
+                    <li>Deployed the application for regular use by shop owners.</li>
+                </ul>
+                <a href="https://github.com/charith-738/General-Store-Database-Management-System" target="_blank" class="project-link">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="22" style="vertical-align: middle; margin-right: 5px;">🔗 View on GitHub
+                </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>If you’d like to get in touch or explore my work, you can reach me here:</p>
+            
+            <div class="contact-links">
+                <a href="mailto:gcharithreddy123@gmail.com" class="contact-btn">📧 Email Me</a>
+                <a href="https://www.linkedin.com/in/gaddam-charith-reddy/" target="_blank" class="contact-btn">💼 LinkedIn</a>
+                <a href="https://github.com/charithreddy" target="_blank" class="contact-btn">🐙 GitHub</a>
+            </div>
+
+            <p>Or send me a quick message:</p>
+            <form>
+                <label><b>Name:</b></label>
+                <input type="text" required>
+
+                <label><b>Email:</b></label>
+                <input type="email" required>
+
+                <div class="gender">
+                    <label><b>Gender:</b></label>
+                    <div class="gender-options">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+
+                <div class="interests">
+                    <label><b>Interests:</b></label>
+                    <div class="interest-options">
+                    <label><input type="checkbox" value="coding"> Coding</label>
+                    <label><input type="checkbox" value="reading"> Reading</label>
+                    </div>
+                </div>
+
+                <label><b>Bio (max 200 chars):</b></label>
+                <textarea maxlength="200"></textarea>
+
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <button class="fixedButton" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">TOP</button>
+    <footer>
+        <p>© 2025 Charith Reddy. All rights reserved.</p>
+        <div>
+            <a href="mailto:gcharithreddy123@gmail.com" class="contact-btn">Email</a>
+            <a href="https://www.linkedin.com/in/gaddam-charith-reddy/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/charithreddy" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
